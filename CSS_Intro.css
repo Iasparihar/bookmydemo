@@ -1,0 +1,26 @@
+div {
+    font-size: 40px;
+    color: brown;
+}
+
+#one {
+    font-size: 80px;
+    color: crimson;
+}
+
+#three, .four, .five {
+    font-size: 80px;
+    color: blue;
+}
+
+* {
+    font-weight: bold;
+}
+
+.item {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    border: solid 1px red;
+    margin-right: 10px;
+}

@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <title>CSS Introduction</title>
+    <style>
+        span {
+            color: orange;
+            font-size: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="CSS_Intro.css" />
+</head>
+
+<body>
+    <!-- 3 Ways to Integrate CSS with HTML 
+    
+        > Inline 
+        > Internal
+        > External 
+
+        Inline - applies to an instance of an element ( style attribute )
+        Internal - Internal to HTML Page ( style tag inside head section )
+        External - common styles across multiple pages within webiste ( seperate css file ) 
+
+        Precedence Order 
+
+        Inline >> Internal >> External 
+
+        *********************  Selectors in CSS  ********************
+
+        usage - uniquely identify the instance of an element 
+
+            > Name ( not recommended )
+            > Id
+            > Class 
+            > Universal 
+            > Grouping 
+
+            Selector Specificity 
+
+            Id >> Class >> Name
+
+            Most Recommended Way to use CSS - External CSS with either Id or Class Selector
+
+    -->
+
+    <div style="color: red">Hi</div>
+    <div style="color: green;">Hello</div>
+
+    <span id="two">Shubham</span>
+    <span>Arora</span>
+
+    <div>Welcome to Edureka ...</div>
+
+    <div id="one">Hello</div>
+
+
+    <div class="four">Hello Shubham</div>
+    <div class="four">Hello Shubham</div>
+
+
+    <div class="five">Hello Shubham</div>
+    <div class="five">Hello Shubham</div>
+
+
+    <!-- Display Property 
+    
+    Block -- 
+
+    >>  takes the entire row space
+    >>  doesn't allow any other element to sit beside it 
+    >>  always starts from a new line 
+    >>  apply external height and width
+
+    Inline -- 
+
+    >>  takes only the required width 
+    >>  will allow any other element to sit beside it 
+    >>  always starts from the same line 
+    >>  external height & width will not apply
+
+    Inline-block -- 
+
+    >>  takes only the required width 
+    >>  will allow any other element to sit beside it 
+    >>  always starts from the same line 
+    >>  apply external height and width
+
+    -->
+
+    <div>
+        <div class="item"></div>
+        <span class="item"></span>
+        <div class="item"></div>
+    </div>
+    <div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+
+
+</body>
+
+</html>

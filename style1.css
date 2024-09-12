@@ -1,0 +1,50 @@
+/* General Reset and Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.margin {
+    padding: 20px;
+}
+
+.heading {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.para {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.blocks-container {
+    display: flex;
+    gap: 20px; /* Space between blocks */
+    margin-bottom: 20px;
+}
+
+.block {
+    flex: 1;
+    background-color: #f0f0f0;
+    height: 150px; /* Example height, adjust as needed */
+}
+
+.part1, .part2 {
+    height: 50%; /* Example height, adjust as needed */
+    background-color: #ccc;
+}
+
+.part1 {
+    background-color: #999;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Submission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        input[type="text"], 
+        select {
+            width: calc(100% - 20px); /* Adjust width for padding */
+            padding: 8px;
+            margin: 4px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"], 
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="submit"], 
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        input[type="submit"]:hover, 
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .checkbox-group, 
+        .radio-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .checkbox-group div, 
+        .radio-group div {
+            display: flex;
+            align-items: center;
+        }
+        .form-footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Submission Form</h1>
+        <form>
+            <table>
+                <tbody>
+                    <tr class="form-group">
+                        <td><label for="first-name">First Name</label></td>
+                        <td><input type="text" id="first-name" placeholder="Enter your First Name" required /></td>
+                    </tr>
+                    <tr class="form-group">
+                        <td><label for="last-name">Last Name</label></td>
+                        <td><input type="text" id="last-name" placeholder="Enter your Last Name" required /></td>
+                    </tr>
+                    <tr class="form-group">
+                        <td><label for="city">City</label></td>
+                        <td>
+                            <select id="city" required>
+                                <option value="">Select a city</option>
+                                <option value="Satna">Satna</option>
+                                <option value="Bhopal">Bhopal</option>
+                                <option value="Indore">Indore</option>
+                                <option value="Katni">Katni</option>
+                                <option value="Jabalpur">Jabalpur</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="form-group">
+                        <td><label>Subjects</label></td>
+                        <td>
+                            <div class="checkbox-group">
+                                <div>
+                                    <input type="checkbox" id="history" />
+                                    <label for="history">History</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="polity" />
+                                    <label for="polity">Polity</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="economy" />
+                                    <label for="economy">Economy</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="geography" />
+                                    <label for="geography">Geography</label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="form-group">
+                        <td><label>Gender</label></td>
+                        <td>
+                            <div class="radio-group">
+                                <div>
+                                    <input type="radio" id="male" name="gender" value="male" />
+                                    <label for="male">Male</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="female" name="gender" value="female" />
+                                    <label for="female">Female</label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="form-footer">
+                        <td colspan="2">
+                            <input type="submit" value="Submit" />
+                            <input type="reset" value="Reset" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
